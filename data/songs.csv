@@ -9,3 +9,11 @@ id,title,artist,genre,mood,energy,tempo_bpm,valence,danceability,acousticness
 8,Night Drive Loop,Neon Echo,synthwave,moody,0.75,110,0.49,0.73,0.22
 9,Focus Flow,LoRoom,lofi,focused,0.40,80,0.59,0.60,0.78
 10,Rooftop Lights,Indigo Parade,indie pop,happy,0.76,124,0.81,0.82,0.35
+11,Autumn Piano,Elena Frost,classical,relaxed,0.25,66,0.30,0.20,0.95
+12,Concrete Kings,MC Ridgeline,hip hop,intense,0.80,95,0.68,0.85,0.08
+13,Wildflower Road,Sable & Wren,folk,chill,0.45,100,0.55,0.48,0.80
+14,Iron Verdict,Grave Hollow,metal,intense,0.97,168,0.25,0.55,0.03
+15,Sunset Skank,Copper Tide,reggae,happy,0.55,88,0.72,0.75,0.40
+16,Velvet Hours,Marisol Vega,r&b,romantic,0.50,84,0.65,0.70,0.30
+17,Paper Moon,Elena Frost,classical,chill,0.20,58,0.45,0.15,0.97
+18,Backroad Ghosts,Sable & Wren,folk,relaxed,0.33,72,0.38,0.42,0.83

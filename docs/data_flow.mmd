@@ -1,0 +1,25 @@
+flowchart TD
+    A[Input: User Preferences<br/>favorite_genre, favorite_mood,<br/>target_energy, likes_acoustic] --> B[Load Songs from CSV<br/>load_songs]
+
+    B --> C{Loop: For each song<br/>in songs list}
+
+    C --> D[score_song<br/>compare song vs user_prefs]
+
+    D --> D1[+2.0 if genre matches]
+    D --> D2[+1.0 if mood matches]
+    D --> D3["+up to 1.0 for energy closeness<br/>1 - abs(song.energy - target_energy)"]
+    D --> D4[+0.5 if likes_acoustic and<br/>song.acousticness > 0.6]
+
+    D1 --> E[Accumulate score + reasons]
+    D2 --> E
+    D3 --> E
+    D4 --> E
+
+    E --> F["Tuple: song, score, reasons"]
+    F --> C
+
+    C -->|all songs scored| G[Sort all songs<br/>by score, descending]
+
+    G --> H[Take Top K]
+
+    H --> I[Output: Ranked Recommendations<br/>song, score, explanation]
